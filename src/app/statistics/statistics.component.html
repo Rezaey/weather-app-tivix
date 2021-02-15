@@ -1,0 +1,45 @@
+<div class="card" style="color: #000">
+  <div class="card-container">
+    <table class="table" style="margin-bottom: 0">
+      <thead>
+        <tr>
+          <th scope="col" colspan="2" style="border-top: none">Statistics</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Day Temperture</th>
+          <td>
+            <span class="degree-temp table-temp"
+              >{{ stats?.day | number: "1.0-0" }} &#176;C</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Night Temperture</th>
+          <td>
+            <span class="degree-temp table-temp"
+              >{{ stats?.night | number: "1.0-0" }} &#176;C</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Morning Temperture</th>
+          <td>
+            <span class="degree-temp table-temp"
+              >{{ stats?.morn | number: "1.0-0" }} &#176;C</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Humidity</th>
+          <td>
+            <span class="degree-temp table-temp">{{
+              stats?.humidity | number: "1.0-0"
+            }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
